@@ -1,0 +1,16 @@
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\bin\Debug\netcoreapp2.2\MyLogbook.AppContext.deps.json
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\bin\Debug\netcoreapp2.2\MyLogbook.AppContext.runtimeconfig.json
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\bin\Debug\netcoreapp2.2\MyLogbook.AppContext.runtimeconfig.dev.json
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\bin\Debug\netcoreapp2.2\MyLogbook.AppContext.dll
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\bin\Debug\netcoreapp2.2\MyLogbook.AppContext.pdb
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\bin\Debug\netcoreapp2.2\MyLogbook.Abstractions.dll
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\bin\Debug\netcoreapp2.2\MyLogbook.Entities.dll
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\bin\Debug\netcoreapp2.2\MyLogbook.Abstractions.pdb
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\bin\Debug\netcoreapp2.2\MyLogbook.Entities.pdb
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\obj\Debug\netcoreapp2.2\MyLogbook.AppContext.csprojAssemblyReference.cache
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\obj\Debug\netcoreapp2.2\MyLogbook.AppContext.csproj.CoreCompileInputs.cache
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\obj\Debug\netcoreapp2.2\MyLogbook.AppContext.AssemblyInfoInputs.cache
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\obj\Debug\netcoreapp2.2\MyLogbook.AppContext.AssemblyInfo.cs
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\obj\Debug\netcoreapp2.2\MyLogbook.AppContext.csproj.CopyComplete
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\obj\Debug\netcoreapp2.2\MyLogbook.AppContext.dll
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.AppContext\obj\Debug\netcoreapp2.2\MyLogbook.AppContext.pdb

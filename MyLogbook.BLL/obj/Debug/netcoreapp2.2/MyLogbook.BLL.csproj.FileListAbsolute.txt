@@ -1,0 +1,11 @@
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.BLL\bin\Debug\netcoreapp2.2\MyLogbook.BLL.deps.json
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.BLL\bin\Debug\netcoreapp2.2\MyLogbook.BLL.runtimeconfig.json
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.BLL\bin\Debug\netcoreapp2.2\MyLogbook.BLL.runtimeconfig.dev.json
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.BLL\bin\Debug\netcoreapp2.2\MyLogbook.BLL.dll
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.BLL\bin\Debug\netcoreapp2.2\MyLogbook.BLL.pdb
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.BLL\obj\Debug\netcoreapp2.2\MyLogbook.BLL.csproj.CoreCompileInputs.cache
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.BLL\obj\Debug\netcoreapp2.2\MyLogbook.BLL.AssemblyInfoInputs.cache
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.BLL\obj\Debug\netcoreapp2.2\MyLogbook.BLL.AssemblyInfo.cs
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.BLL\obj\Debug\netcoreapp2.2\MyLogbook.BLL.dll
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.BLL\obj\Debug\netcoreapp2.2\MyLogbook.BLL.pdb
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.BLL\obj\Debug\netcoreapp2.2\MyLogbook.BLL.csprojAssemblyReference.cache

@@ -1,0 +1,11 @@
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.Abstractions\bin\Debug\netcoreapp2.2\MyLogbook.Abstractions.deps.json
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.Abstractions\bin\Debug\netcoreapp2.2\MyLogbook.Abstractions.runtimeconfig.json
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.Abstractions\bin\Debug\netcoreapp2.2\MyLogbook.Abstractions.runtimeconfig.dev.json
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.Abstractions\bin\Debug\netcoreapp2.2\MyLogbook.Abstractions.dll
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.Abstractions\bin\Debug\netcoreapp2.2\MyLogbook.Abstractions.pdb
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.Abstractions\obj\Debug\netcoreapp2.2\MyLogbook.Abstractions.csproj.CoreCompileInputs.cache
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.Abstractions\obj\Debug\netcoreapp2.2\MyLogbook.Abstractions.AssemblyInfoInputs.cache
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.Abstractions\obj\Debug\netcoreapp2.2\MyLogbook.Abstractions.AssemblyInfo.cs
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.Abstractions\obj\Debug\netcoreapp2.2\MyLogbook.Abstractions.dll
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.Abstractions\obj\Debug\netcoreapp2.2\MyLogbook.Abstractions.pdb
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.Abstractions\obj\Debug\netcoreapp2.2\MyLogbook.Abstractions.csprojAssemblyReference.cache
