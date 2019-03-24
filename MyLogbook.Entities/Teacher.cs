@@ -17,9 +17,9 @@ namespace MyLogbook.Entities
         [Column("lastName")]
         [StringLength(64)]
         public string LastName { get; set; }
-		public virtual List<Group> Groups{ get; set; }
-		public virtual List<Subject> Subjects{ get; set; }
-		public virtual List<Mark> Marks{ get; set; }
+		public virtual ICollection<Group> Groups{ get; set; }
+		public virtual ICollection<Subject> Subjects{ get; set; }
+		public virtual ICollection<Mark> Marks{ get; set; }
 
 
 		

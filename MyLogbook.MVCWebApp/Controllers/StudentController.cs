@@ -33,7 +33,11 @@ namespace MyLogbook.MVCWebApp.Controllers
             }
 
             //var student = await _repository.GetItemAsync(id.Value);
-			var student = await _repository.AllItems.Include(s => s.Group).Include(s=>s.Marks).FirstOrDefaultAsync(x => x.Id == id.Value);
+			var student = await _repository.AllItems
+				.Include(s => s.Marks)
+					.ThenInclude(m=>m.Subject)
+				.Include(s => s.Group)				
+				.FirstOrDefaultAsync(x => x.Id == id.Value);			
 			if (student == null)
             {
                 return NotFound();

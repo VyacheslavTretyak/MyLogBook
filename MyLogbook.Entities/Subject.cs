@@ -15,6 +15,6 @@ namespace MyLogbook.Entities
         public string Name{ get; set; }
         
         public virtual Faculty Faculty{ get; set; }
-		public virtual List<Mark> Marks { get; set; }
+		public virtual ICollection<Mark> Marks { get; set; }
     }
 }

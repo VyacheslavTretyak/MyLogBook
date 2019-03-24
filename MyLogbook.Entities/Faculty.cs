@@ -13,7 +13,7 @@ namespace MyLogbook.Entities
         [Column("name")]
         [StringLength(64)]
         public string Name { get; set; }
-        public virtual List<Group> Groups { get; set; }
-        public virtual List<Subject> Subjects { get; set; }
+        public virtual ICollection<Group> Groups { get; set; }
+        public virtual ICollection<Subject> Subjects { get; set; }
     }
 }
