@@ -19,7 +19,7 @@ namespace MyLogbook.Entities
         public string LastName { get; set; }
 
         public virtual Group Group { get; set; }
-		public virtual List<Mark> Marks { get; set; }
+		public virtual ICollection<Mark> Marks { get; set; }
 
 	}
 }

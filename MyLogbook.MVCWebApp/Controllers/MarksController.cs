@@ -47,7 +47,7 @@ namespace MyLogbook.MVCWebApp.Controllers
         public IActionResult Create(Guid id)
         {
 			var mark = new Mark();
-			mark.Date = DateTime.Now;
+			mark.Date = DateTime.Now;			
 			mark.Student = _context.Students.Include(s=>s.Group).Include(s=>s.Marks).FirstOrDefault(s=>s.Id == id);
 			var subjects = _context.Set<Subject>();
 			ViewBag.Subjects = new SelectList(subjects, "Id", "Name");
@@ -61,12 +61,12 @@ namespace MyLogbook.MVCWebApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Guid Subject,Guid Teacher, Student Student, [Bind("Value,Date,Id")] Mark mark)
+        public async Task<IActionResult> Create(Guid Subject,Guid Teacher, Guid Id, [Bind("Value,Date,Id")] Mark mark)
         {
             if (ModelState.IsValid)
             {
                 mark.Id = Guid.NewGuid();
-				mark.Student = Student;
+				mark.Student = _context.Students.Include(s => s.Group).Include(s => s.Marks).FirstOrDefault(s=>s.Id == Id);
 				mark.Subject = _context.Subjects.Include(s=>s.Faculty).Include(s=>s.Marks).FirstOrDefault(s=>s.Id == Subject);
 				mark.Teacher = _context.Teachers.Include(s => s.Subjects).Include(s => s.Marks).FirstOrDefault(s => s.Id == Teacher);
 				_context.Add(mark);
