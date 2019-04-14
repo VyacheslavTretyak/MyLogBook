@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MyLogbook.Entities;
 using System;
 using System.Collections.Generic;
 
 namespace MyLogbook.AppContext
 {
-    public class AppDbContext: DbContext
+    public class AppDbContext: IdentityDbContext
     {
         public DbSet<Faculty> Faculties { get; set; }
         public DbSet<Group> Groups { get; set; }

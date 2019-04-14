@@ -32,7 +32,7 @@
 				<label asp-for="Teacher" class="control-label">Teachers:</label>
 				<select asp-for="Teacher" class="form-control" asp-items="ViewBag.Teachers"></select>
 			</div>			
-			<input type="text" asp-for="Student.Id" />			
+			<input type="hidden" asp-for="Student.Id" />			
 			<div class="form-group">
 				<input type="submit" value="Create" class="btn btn-primary" />
 			</div>
