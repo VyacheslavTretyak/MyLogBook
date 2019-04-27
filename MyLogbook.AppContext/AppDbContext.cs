@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace MyLogbook.AppContext
 {
-    public class AppDbContext: IdentityDbContext
+    public class AppDbContext: IdentityDbContext<User>
     {
         public DbSet<Faculty> Faculties { get; set; }
         public DbSet<Group> Groups { get; set; }
@@ -18,7 +18,8 @@ namespace MyLogbook.AppContext
         public AppDbContext(DbContextOptions<AppDbContext> options)
             :base (options)
         {
-        }
+			Database.EnsureCreated();
+		}
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

@@ -68,3 +68,5 @@ D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.MVCWebApp\bin\D
 D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.MVCWebApp\obj\Debug\netcoreapp2.2\MyLogbook.MVCWebApp.Views.pdb
 D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.MVCWebApp\obj\Debug\netcoreapp2.2\MyLogbook.MVCWebApp.dll
 D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.MVCWebApp\obj\Debug\netcoreapp2.2\MyLogbook.MVCWebApp.pdb
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.MVCWebApp\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+D:\Documents\Visual Studio 2017\Projects\ASP\MyLogbook\MyLogbook.MVCWebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs

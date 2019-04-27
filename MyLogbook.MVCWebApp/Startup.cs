@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MyLogbook.AppContext;
+using MyLogbook.Entities;
 using MyLogbook.Repositories;
 
 namespace MyLogbook.MVCWebApp
@@ -23,14 +26,19 @@ namespace MyLogbook.MVCWebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+			services.Configure<CookiePolicyOptions>(options =>
+			{
+				// This lambda determines whether user consent for non-essential cookies is needed for a given request.
+				options.CheckConsentNeeded = context => true;
+				options.MinimumSameSitePolicy = SameSiteMode.None;
+			});
 
-
-            services.AddDbContext<AppDbContext>(options =>
+			services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("MyConnectionString1")));
 
-
-			services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
-
+			services.AddDefaultIdentity<User>()
+				.AddDefaultUI(UIFramework.Bootstrap4)
+				.AddEntityFrameworkStores<AppDbContext>();
 
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
@@ -41,16 +49,6 @@ namespace MyLogbook.MVCWebApp
             services.AddTransient<ITeacherRepository, TeacherRepository>();
             services.AddTransient<ISubjectRepository, SubjectRepository>();
             services.AddTransient<IMarkRepository, MarkRepository>();
-
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
-
-
-           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,29 +57,34 @@ namespace MyLogbook.MVCWebApp
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
+				app.UseDatabaseErrorPage();
+			}
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+				app.UseHsts();
             }
 
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetRequiredService<AppDbContext>();
 
-                //context.Database.EnsureDeleted();
+                context.Database.EnsureDeleted();
                 context.Database.EnsureCreated();
             }
 
-            app.UseStaticFiles();
+			app.UseHttpsRedirection();
+			app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            app.UseMvc(routes =>
-            {				
+			app.UseAuthentication();
+
+			app.UseMvc(routes =>
+			{
 				routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
-        }
+					name: "default",
+					template: "{controller=Home}/{action=Index}/{id?}");
+			});
+		}
     }
 }
